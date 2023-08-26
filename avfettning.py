@@ -37,6 +37,6 @@ for chart in charts:
         df = pd.concat(series,axis=1)
         df= df[df.index>"20230731"].ffill()
         st.line_chart(df)
-        st.title("Veckofix förändring")
+        st.title("Veckofis förändring")
         st.line_chart(df.diff(7))
 
